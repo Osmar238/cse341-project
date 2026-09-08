@@ -5,7 +5,7 @@
     "description": "API for managing contacts in MongoDB",
     "version": "1.0.0"
   },
-  "host": "cse341-project-iekg.onrender.com/",
+  "host": "cse341-project-iekg.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"

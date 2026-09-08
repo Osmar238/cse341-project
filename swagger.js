@@ -5,12 +5,13 @@ const doc = {
     title: 'Contacts API',
     description: 'API for managing contacts in MongoDB',
   },
-  host: 'https://cse341-project-iekg.onrender.com/', 
-  schemes: ['http', 'https'],
+  // Exactamente así: sin http:// y sin diagonal / al final
+  host: 'cse341-project-iekg.onrender.com', 
+  // Obligamos a que use conexión segura
+  schemes: ['https'], 
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/index.js']; // Apunta a las rutas que ya creaste
+const endpointsFiles = ['./routes/index.js'];
 
-/* Genera el archivo swagger.json */
 swaggerAutogen(outputFile, endpointsFiles, doc);

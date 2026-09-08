@@ -6,9 +6,9 @@ const doc = {
     description: 'API for managing contacts in MongoDB',
   },
   // Exactamente así: sin http:// y sin diagonal / al final
-  host: 'cse341-project-iekg.onrender.com', 
+  host: 'cse341-project-iekg.onrender.com',
   // Obligamos a que use conexión segura
-  schemes: ['https'], 
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';

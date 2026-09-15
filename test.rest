@@ -3,3 +3,15 @@ GET http://localhost:3000/contacts
 
 ### Obtener un contacto por ID (Reemplaza el ID de abajo con uno real de tu base de datos)
 GET http://localhost:3000/contacts/AQUI_VA_TU_ID_REAL
+
+### Prueba de escudo protector (POST intencionalmente malo)
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Intruso",
+    "lastName": "",
+    "email": "correo_falso.com",
+    "favoriteColor": "Rojo",
+    "birthday": "01-01-2000"
+}
